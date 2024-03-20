@@ -1,3 +1,8 @@
+import Layout from "@/components/layout";
+import About from "@/components/organisms/about/about";
+import Hero from "@/components/organisms/hero/hero";
+import Services from "@/components/organisms/services/services";
+import Skills from "@/components/organisms/skills/skills";
 import Head from "next/head";
 
 export default function Home() {
@@ -10,9 +15,12 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <div className="flex w-full flex-col">
-          Hello
-        </div>
+        <Layout>
+          <Hero />
+          <About />
+          <Services />
+          <Skills />
+        </Layout>
       </main>
     </>
   );
