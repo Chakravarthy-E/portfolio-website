@@ -16,13 +16,21 @@ export default function SkillCard({
   image,
 }: Props) {
   return (
-    <div className="border-style flex p-5 items-center space-x-3">
-      <img src={image.url} alt={name} className="w-20 h-20 object-contain" />
-      <div>
-        <h1>{name}</h1>
-        <h1>Sequence : {sequence}</h1>
-        <progress value={percentage} max={100} />
-      </div>
-    </div>
+    <>
+      {enabled && (
+        <div className="border-style flex flex-col md:flex-row p-5 items-center md:space-x-3">
+          <img
+            src={image.url}
+            alt={name}
+            className="w-20 h-20 md:w-24 md:h-24 object-contain"
+          />
+          <div className="md:space-y-3">
+            <h1 className="text-white text-lg md:text-xl lg:text-2xl">
+              {name}
+            </h1>
+          </div>
+        </div>
+      )}
+    </>
   );
 }

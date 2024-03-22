@@ -40,8 +40,6 @@ export const GlobalProvider = ({ children }: GlobalProviderProps) => {
     fetchProfile();
   }, []);
 
-  console.log(profile);
-
   return (
     <GlobalContext.Provider value={{ profile, setProfile }}>
       {children}
