@@ -55,5 +55,15 @@ This project is licensed under the [MIT License](LICENSE).
 ## Contact
 For inquiries, please contact [chakravarthy.8328@gmai.com](mailto:your-email@example.com).
 
+## Demo 
+```bash
+https://portfolio-website-puymx4z3s-chakravarthy-e.vercel.app/
+```
+
+<img width="947" alt="hero page" src="https://github.com/Chakravarthy-E/portfolio-website/assets/120352535/e4c5f2b0-3648-4751-ac93-ba7c333e54ff">
+<img width="945" alt="projects" src="https://github.com/Chakravarthy-E/portfolio-website/assets/120352535/f6b79a8e-87fc-4351-b2f5-889a75020b0a">
+
+
+
 
 
