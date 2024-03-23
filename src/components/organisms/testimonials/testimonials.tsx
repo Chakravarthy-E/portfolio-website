@@ -15,7 +15,7 @@ export default function Testimonials() {
         Testimonials
       </h1>
       <div className="w-full max-w-3xl">
-        <Carousel autoPlay showIndicators={false} infiniteLoop>
+        <Carousel autoPlay showIndicators={false} infiniteLoop >
           {sortedTestimonials?.map((testimonial: any, index: number) => (
             <TestimonialCard key={index} {...testimonial} />
           ))}

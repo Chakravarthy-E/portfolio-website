@@ -6,7 +6,7 @@
 
 @layer base {
   * {
-    @apply border-border bg-neutral-950 ;
+    @apply border-border bg-neutral-950;
     font-family: "Outfit", sans-serif;
   }
   body {
@@ -15,5 +15,5 @@
 }
 
 .border-style {
-  @apply border border-gray-800 rounded-xl;
+  @apply border border-gray-800 rounded-xl shadow-sm shadow-blue-900;
 }

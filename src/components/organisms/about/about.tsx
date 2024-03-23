@@ -1,4 +1,5 @@
 import { useGlobalContext } from "@/contexts/globalContext";
+import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 export default function About() {
   const { profile } = useGlobalContext();
@@ -23,24 +24,26 @@ export default function About() {
           <p className="text-gray-400 first-letter:text-blue-500 first-letter:text-3xl tracking-wide">
             {profile?.user?.about.description}
           </p>
-          <div className="border-style w-fit px-4 py-2">
-            <p className="text-white">Experience</p>
-            <p className="text-xl md:text-2xl lg:text-2xl text-blue-600 font-bold text-center">
-              {profile?.user?.about.exp_year} years
-            </p>
+          <div className="lg:flex lg:flex-row lg:space-x-3 space-y-2">
+            <div className="border-style w-fit px-4 py-2">
+              <p className="text-white">Experience</p>
+              <p className="text-xl md:text-2xl lg:text-xl text-blue-600 font-bold text-center">
+                {profile?.user?.about.exp_year} years
+              </p>
+            </div>
+            <div className="border-style w-fit px-4 py-2">
+              <p className="text-white">Address</p>
+              <p className="text-xl md:text-2xl lg:text-xl text-blue-600 font-bold text-center">
+                {profile?.user?.about.address}
+              </p>
+            </div>
+            <div className="border-style w-fit px-4 py-2">
+              <p className="text-white">Phone</p>
+              <p className="text-xl md:text-2xl lg:text-xl text-blue-600 font-bold text-center">
+                {profile?.user?.about.phoneNumber}
+              </p>
+            </div>{" "}
           </div>
-          <div className="border-style w-fit px-4 py-2">
-            <p className="text-white">Address</p>
-            <p className="text-xl md:text-2xl lg:text-2xl text-blue-600 font-bold text-center">
-              {profile?.user?.about.address}
-            </p>
-          </div>
-          <div className="border-style w-fit px-4 py-2">
-            <p className="text-white">Phone</p>
-            <p className="text-xl md:text-2xl lg:text-2xl text-blue-600 font-bold text-center">
-              {profile?.user?.about.phoneNumber}
-            </p>
-          </div>{" "}
         </div>
       </div>
     </div>

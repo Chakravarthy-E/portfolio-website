@@ -2,6 +2,8 @@ import React from "react";
 import ServiceCard from "@/components/atoms/service_card";
 import { useGlobalContext } from "@/contexts/globalContext";
 
+
+
 export default function Services() {
   const { profile } = useGlobalContext();
   return (

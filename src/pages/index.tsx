@@ -1,3 +1,4 @@
+import Loading from "@/components/atoms/shared/loading";
 import Layout from "@/components/layout";
 import About from "@/components/organisms/about/about";
 import Contact from "@/components/organisms/contact/contact";
@@ -5,12 +6,14 @@ import Hero from "@/components/organisms/hero/hero";
 import Projects from "@/components/organisms/projects/projects";
 import Services from "@/components/organisms/services/services";
 import Skills from "@/components/organisms/skills/skills";
-import SocialHandles from "@/components/organisms/social_handles/social_handles";
 import Testimonials from "@/components/organisms/testimonials/testimonials";
 import Timeline from "@/components/organisms/timeline/timeline";
+import { useGlobalContext } from "@/contexts/globalContext";
 import Head from "next/head";
 
 export default function Home() {
+  const { profile } = useGlobalContext();
+
   return (
     <>
       <Head>

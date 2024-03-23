@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 interface Props {
   liverurl: string;
   githuburl: string;
