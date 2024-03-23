@@ -2,22 +2,28 @@
 
 This is a personal portfolio website showcasing my skills and experience. Built with modern technologies, it offers a smooth user experience and adapts seamlessly to various screen sizes.
 
-Features:
+# Features:
 
-Modern Tech Stack: Leverages Next.js (React framework), Framer Motion (animation library), TypeScript (for type safety), and responsive design principles.
-Interactive Experience: Employs Framer Motion to create engaging animations that enhance user interaction.
-Responsive Design: Adapts beautifully to any device, ensuring optimal viewing on desktops, tablets, and mobiles.
-TypeScript: Improves code readability, and maintainability, and catches potential errors early in the development process.
-Technologies Used:
+- Modern Tech Stack: Leverages Next.js (React framework), Framer Motion (animation library), TypeScript (for type safety), and responsive design principles.
+- Interactive Experience: Employs Framer Motion to create engaging animations that enhance user interaction.
+- Responsive Design: Adapts beautifully to any device, ensuring optimal viewing on desktops, tablets, and mobiles.
+- TypeScript: Improves code readability, and maintainability, and catches potential errors early in the development process.
 
-Frontend:
-Next.js (React framework)
-Framer Motion (animation library)
-TypeScript (for type safety)
-Tailwind CSS (utility-first CSS framework)
-Framer (for more complex design and prototyping)
+# Tech Stack:
+- Next.js (React framework)
+- Framer Motion (animation library)
+- TypeScript (for type safety)
+- Tailwind CSS (utility-first CSS framework)
 
-Prerequisites:
+# Prerequisites:
+Node.js and npm (or yarn) are installed on your system.
 
-Node.js and npm (or yarn) installed on your system.
-Installation:
+
+# Clone this repository
+```bash
+ git clone https://github.com/Chakravarthy-E/portfolio-website
+
+
+# Installation:
+```bash
+npm i install
