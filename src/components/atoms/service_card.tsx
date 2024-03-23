@@ -1,15 +1,6 @@
+import { services } from "@/@types/user";
 import Image from "next/image";
 import React from "react";
-
-interface Props {
-  name: string;
-  charge: string;
-  desc: string;
-  image: {
-    url: string;
-  };
-  enabled: boolean;
-}
 
 export default function ServiceCard({
   name,
@@ -17,7 +8,7 @@ export default function ServiceCard({
   desc,
   image,
   enabled,
-}: Props) {
+}: services) {
   return (
     <>
       {enabled && (

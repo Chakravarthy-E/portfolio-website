@@ -1,21 +1,9 @@
+import { projects } from "@/@types/user";
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-interface Props {
-  liverurl: string;
-  githuburl: string;
-  title: string;
-  image: {
-    url: string;
-  };
-  description: string;
-  techStack: string[];
-  enabled: boolean;
-  sequence: number;
-}
-
 export default function ProjectCard({
-  liverurl,
+  liveurl,
   githuburl,
   techStack,
   title,
@@ -23,7 +11,7 @@ export default function ProjectCard({
   image,
   enabled,
   sequence,
-}: Props) {
+}: projects) {
   console.log(enabled);
   return (
     <>

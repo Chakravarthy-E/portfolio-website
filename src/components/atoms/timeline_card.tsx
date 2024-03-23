@@ -1,16 +1,5 @@
+import { timeline } from "@/@types/user";
 import { format } from "date-fns";
-
-export interface TimeLineProps {
-  company_name: string;
-  summary: string;
-  startDate: string;
-  endDate: string;
-  jobTitle: string;
-  jobLocation: string;
-  bulletPoints: string[];
-  forEducation: boolean;
-  enabled: boolean;
-}
 
 export default function TimelineCard({
   company_name,
@@ -21,7 +10,7 @@ export default function TimelineCard({
   jobLocation,
   bulletPoints,
   enabled,
-}: TimeLineProps) {
+}: timeline) {
   return (
     <>
       {enabled && (

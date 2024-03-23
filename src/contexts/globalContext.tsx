@@ -1,3 +1,4 @@
+import { UserType } from "@/@types/user";
 import axios from "axios";
 import {
   createContext,
@@ -8,7 +9,10 @@ import {
 } from "react";
 
 interface GlobalContextType {
-  profile: null;
+  profile: {
+    user: UserType;
+  };
+
   setProfile: React.Dispatch<React.SetStateAction<null>>;
 }
 const GlobalContext = createContext<GlobalContextType | undefined>(undefined);

@@ -1,5 +1,4 @@
 import { useGlobalContext } from "@/contexts/globalContext";
-import { TextGenerateEffect } from "@/components/ui/text-generate-effect";
 
 export default function About() {
   const { profile } = useGlobalContext();
@@ -12,7 +11,7 @@ export default function About() {
       <div className="flex flex-col md:flex-row items-center justify-center md:justify-between py-8 md:py-16 space-y-8 md:space-y-0 md:space-x-10">
         <div className="w-full md:w-1/2 lg:w-1/3 flex justify-center">
           <img
-            src={profile?.user.about.avatar.url}
+            src={profile?.user.about.avatar?.url}
             alt="Avatar"
             className="object-cover w-72 h-full md:w-96 md:h-72 lg:w-80 lg:h-full rounded-lg border px-3"
           />

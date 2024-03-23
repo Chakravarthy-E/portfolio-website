@@ -1,21 +1,13 @@
+import { testimonials } from "@/@types/user";
 import Image from "next/image";
 
-interface TestmonialProps {
-  image: {
-    url: string;
-  };
-  name: string;
-  review: string;
-  position: string;
-  enabled: boolean;
-}
 export default function TestimonialCard({
   image,
   name,
   review,
   position,
   enabled,
-}: TestmonialProps) {
+}: testimonials) {
   return (
     <>
       {enabled && (

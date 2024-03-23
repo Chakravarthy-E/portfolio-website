@@ -1,20 +1,12 @@
+import { social_handles } from "@/@types/user";
 import Image from "next/image";
-
-interface SocialCardProps {
-  platform: string;
-  url: string;
-  image: {
-    url: string;
-  };
-  enabled: boolean;
-}
 
 export default function SocialCard({
   platform,
   url,
   image,
   enabled,
-}: SocialCardProps) {
+}: social_handles) {
   return (
     <>
       {enabled && (

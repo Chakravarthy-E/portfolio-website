@@ -1,12 +1,13 @@
+import { projects } from "@/@types/user";
 import ProjectCard from "@/components/atoms/project_card";
 import { useGlobalContext } from "@/contexts/globalContext";
 
 export default function Projects() {
   const { profile } = useGlobalContext();
 
-  const sortedProjects = profile?.user.projects?.sort(
-    (a: any, b: any) => a.sequence - b.sequence
-  );
+  const sortedProjects = (
+    profile?.user.projects as unknown as projects[]
+  )?.sort((a: any, b: any) => a.sequence - b.sequence);
 
   return (
     <div id="projects" className="py-5 px-5 md:px-10 lg:px-20 min-h-screen">

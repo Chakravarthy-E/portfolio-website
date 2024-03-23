@@ -1,14 +1,7 @@
+import { skills } from "@/@types/user";
 import Image from "next/image";
 
-interface Props {
-  enabled: boolean;
-  name: string;
-  sequence: string;
-  percentage: number;
-  image: {
-    url: string;
-  };
-}
+
 
 export default function SkillCard({
   enabled,
@@ -16,7 +9,7 @@ export default function SkillCard({
   sequence,
   percentage,
   image,
-}: Props) {
+}: skills) {
   return (
     <>
       {enabled && (
