@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface TestmonialProps {
   image: {
     url: string;
@@ -18,7 +20,9 @@ export default function TestimonialCard({
     <>
       {enabled && (
         <div className="">
-          <img
+          <Image
+            width={300}
+            height={200}
             src={image.url}
             alt={name}
             className="w-52 h-52 object-contain rounded-full border"

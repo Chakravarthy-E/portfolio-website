@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 interface Props {
   liverurl: string;
@@ -28,7 +29,13 @@ export default function ProjectCard({
     <>
       {enabled && (
         <div className="border-style p-2">
-          <img src={image.url} alt={title} className="rounded-lg" />
+          <Image
+            width={400}
+            height={200}
+            src={image.url}
+            alt={title}
+            className="rounded-lg w-full"
+          />
           <div className="mt-2 flex items-center flex-col">
             <ul className="flex space-x-4  text-xs border-gray-800 w-full py-1 my-1 items-center justify-center text-gray-600">
               {techStack.map((tech) => (

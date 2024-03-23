@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 interface SocialCardProps {
   platform: string;
   url: string;
@@ -20,7 +22,7 @@ export default function SocialCard({
           href={url}
           className="flex items-center border-style w-fit px-2 py-2 space-x-2"
         >
-          <img
+          <Image
             src={image.url}
             alt={platform}
             className="w-5 h-5 object-contain"

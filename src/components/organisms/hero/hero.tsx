@@ -16,7 +16,7 @@ export default function Hero() {
         <p className="text-lg md:text-xl text-white">
           Hello{" "}
           <span className="text-blue-800 font-bold text-xl md:text-2xl ml-1">
-            I'm
+            I&apos;m
           </span>
         </p>
         <h1 className="text-5xl md:text-9xl font-bold tracking-wide text-blue-800 bg-transparent first-letter:uppercase ">

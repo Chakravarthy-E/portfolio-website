@@ -13,6 +13,9 @@ import Head from "next/head";
 
 export default function Home() {
   const { profile } = useGlobalContext();
+  if (!profile) {
+    return <Loading />;
+  }
 
   return (
     <>
