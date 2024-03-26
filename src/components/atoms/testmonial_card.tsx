@@ -18,6 +18,7 @@ export default function TestimonialCard({
             src={image.url}
             alt={name}
             className="w-52 h-52 object-contain rounded-full border"
+            loading="lazy"
           />
           <div className="space-y-3">
             <h1 className="text-white text-xl">{name}</h1>

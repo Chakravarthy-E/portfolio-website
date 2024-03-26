@@ -3,7 +3,6 @@ import ScrollLink from "@/components/atoms/shared/scroll_link";
 import { useGlobalContext } from "@/contexts/globalContext";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
-import Link from "next/link";
 import { useState } from "react";
 
 export default function Header() {
@@ -17,9 +16,10 @@ export default function Header() {
         "absolute",
         "top-[60px]",
         "w-full",
-        "p-4",
+        "p-10",
         "gap-10",
         "flex-col",
+        "h-screen",
       ];
     } else {
       menuClassess.push("hidden", "md:flex", "space-x-10");
@@ -29,7 +29,7 @@ export default function Header() {
 
   const { profile } = useGlobalContext();
   return (
-    <nav className="bg-neutral-950 fixed w-full z-50 border-b border-gray-700 text-white p-4 sm:p-4 md:flex md:justify-between md:items-center ">
+    <nav className="bg-neutral-950 sticky top-0 w-full  z-50 border-b border-gray-700 text-white p-4 sm:p-4 md:flex md:justify-between md:items-center ">
       <div className="container mx-auto flex justify-between items-center">
         <div className="text-2xl font-bold">
           <ScrollLink href="/home">{profile?.user?.username}</ScrollLink>

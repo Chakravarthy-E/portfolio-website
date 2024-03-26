@@ -20,6 +20,7 @@ export default function ServiceCard({
               width={400}
               height={200}
               className="w-full rounded-xl"
+              loading="lazy"
             />
             <h1 className="text-xl font-bold text-center text-white">{name}</h1>
           </div>
