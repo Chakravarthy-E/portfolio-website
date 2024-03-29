@@ -7,9 +7,20 @@ import Services from "@/components/organisms/services/services";
 import Skills from "@/components/organisms/skills/skills";
 import Testimonials from "@/components/organisms/testimonials/testimonials";
 import Timeline from "@/components/organisms/timeline/timeline";
+import { useGlobalContext } from "@/contexts/globalContext";
+import { Blocks } from "react-loader-spinner";
 import Head from "next/head";
+import Loader from "@/components/atoms/shared/loader";
 
 export default function Home() {
+  const { profile } = useGlobalContext();
+  if (!profile) {
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        <Loader />
+      </div>
+    );
+  }
   return (
     <>
       <Head>

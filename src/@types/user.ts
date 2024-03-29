@@ -85,6 +85,7 @@ export type timeline = {
   jobTitle: string;
   jobLocation: string;
   bulletPoints: string[];
+  forEducation: boolean;
 };
 
 export type about = {

@@ -28,20 +28,39 @@ export default function Header() {
   }
 
   const { profile } = useGlobalContext();
+
+  function handleMenuItemClick() {
+    setIsOpen(false);
+  }
+
   return (
-    <nav className="bg-neutral-950 sticky top-0 w-full  z-50 border-b border-gray-700 text-white p-4 sm:p-4 md:flex md:justify-between md:items-center ">
+    <nav className="bg-neutral-950 h-16 sticky top-0 w-full z-50 border-b border-gray-700 text-white p-4 sm:p-4 md:flex md:justify-between md:items-center ">
       <div className="container mx-auto flex justify-between items-center">
-        <div className="text-2xl font-bold">
+        <div className="text-2xl font-bold first-letter:uppercase text-blue-500">
           <ScrollLink href="/home">{profile?.user?.username}</ScrollLink>
         </div>
         <div className={cn(getMenuClasses())}>
-          <ScrollLink href="/about">About</ScrollLink>
-          <ScrollLink href="/services">Services</ScrollLink>
-          <ScrollLink href="/skills">Skills</ScrollLink>
-          <ScrollLink href="/projects">Projects</ScrollLink>
-          <ScrollLink href="/timeline">Timeline</ScrollLink>
-          <ScrollLink href="/testimonials">Testimonials</ScrollLink>
-          <ScrollLink href="/contact">Contact</ScrollLink>
+          <ScrollLink href="/about" onClick={handleMenuItemClick}>
+            About
+          </ScrollLink>
+          <ScrollLink href="/services" onClick={handleMenuItemClick}>
+            Services
+          </ScrollLink>
+          <ScrollLink href="/skills" onClick={handleMenuItemClick}>
+            Skills
+          </ScrollLink>
+          <ScrollLink href="/projects" onClick={handleMenuItemClick}>
+            Projects
+          </ScrollLink>
+          <ScrollLink href="/timeline" onClick={handleMenuItemClick}>
+            Timeline
+          </ScrollLink>
+          <ScrollLink href="/testimonials" onClick={handleMenuItemClick}>
+            Testimonials
+          </ScrollLink>
+          <ScrollLink href="/contact" onClick={handleMenuItemClick}>
+            Contact
+          </ScrollLink>
         </div>
         <div className="md:hidden flex items-center">
           <button onClick={() => setIsOpen(!isOpen)}>

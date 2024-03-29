@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <GlobalProvider>
         <Header />
         <Component {...pageProps} />
-      </GlobalProvider>dsdads
+      </GlobalProvider>
     </>
   );
 }
