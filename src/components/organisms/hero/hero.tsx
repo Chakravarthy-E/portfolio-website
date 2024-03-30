@@ -8,7 +8,7 @@ const Hero = () => {
   return (
     <div
       id="home"
-      className="min-h-screen flex items-center justify-center bg-neutral-950 px-4 md:px-8 lg:px-20 antialiased"
+      className="min-h-screen flex items-center justify-center  px-4 md:px-8 lg:px-20 antialiased"
     >
       <div className="max-w-4xl w-full ">
         <div className="flex flex-col md:flex-row  items-center lg:space-x-20 justify-center space-y-8 md:space-y-0 md:space-x-8 text-center md:text-left">
