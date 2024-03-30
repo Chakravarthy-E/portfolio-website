@@ -1,5 +1,5 @@
-import Education from "@/components/atoms/education";
-import Experience from "@/components/atoms/experience";
+import Education from "@/components/atoms/education_card";
+import Experience from "@/components/atoms/experience_card";
 import { useGlobalContext } from "@/contexts/globalContext";
 import React from "react";
 

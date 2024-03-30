@@ -12,15 +12,15 @@ export default function SocialCard({
       {enabled && (
         <a
           href={url}
-          className="flex items-center border-style w-fit px-2 py-2 space-x-2"
+          className="flex items-center  hover:text-blue-600 w-fit px-2 py-2 space-x-2 text-sm md:text-base"
         >
           <Image
             src={image.url}
             alt={platform}
-            className="w-5 h-5 object-contain"
+            className="w-6 h-6 md:w-8 md:h-8 object-contain"
             loading="lazy"
-            width={20}
-            height={20}
+            width={14}
+            height={14}
           />
           <p className="text-xs">{platform}</p>
         </a>
